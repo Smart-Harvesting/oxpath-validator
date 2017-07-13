@@ -8,7 +8,7 @@
 	<artifactId>oxpath-validator</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>de.th_koeln.iws.sh2.OXPathValidator_GWT</name>
+	<name>de.th_koeln.iws.sh2.OXPathValidator</name>
 
 	<properties>
 
@@ -99,8 +99,8 @@
 					</execution>
 				</executions>
 				<configuration>
-					<moduleName>de.th_koeln.iws.sh2.OXPathValidator_GWT</moduleName>
-					<moduleShortName>OXPathValidator_GWT</moduleShortName>
+					<moduleName>de.th_koeln.iws.sh2.OXPathValidator</moduleName>
+					<moduleShortName>OXPathValidator</moduleShortName>
 					<failOnError>true</failOnError>
 					<!-- GWT compiler 2.8 requires 1.8, hence define sourceLevel here if 
 						you use a different source language for java compilation -->
@@ -116,7 +116,7 @@
 					<classpathScope>compile+runtime</classpathScope>
 					<!-- URL(s) that should be opened by DevMode (gwt:devmode). -->
 					<startupUrls>
-						<startupUrl>OXPathValidator_GWT.html</startupUrl>
+						<startupUrl>OXPathValidator.html</startupUrl>
 					</startupUrls>
 				</configuration>
 			</plugin>

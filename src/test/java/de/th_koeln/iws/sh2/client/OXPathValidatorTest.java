@@ -8,14 +8,14 @@ import com.google.gwt.user.client.rpc.ServiceDefTarget;
 /**
  * GWT JUnit tests must extend GWTTestCase.
  */
-public class OXPathValidator_GWTTest extends GWTTestCase {
+public class OXPathValidatorTest extends GWTTestCase {
 
 	/**
 	 * Must refer to a valid module that sources this class.
 	 */
 	@Override
 	public String getModuleName() {
-		return "de.th_koeln.iws.sh2.OXPathValidator_GWTJUnit";
+		return "de.th_koeln.iws.sh2.OXPathValidatorJUnit";
 	}
 
 	/**
@@ -26,7 +26,7 @@ public class OXPathValidator_GWTTest extends GWTTestCase {
 		// Create the service that we will test.
 		ParseServiceAsync parseService = GWT.create(ParseService.class);
 		ServiceDefTarget target = (ServiceDefTarget) parseService;
-		target.setServiceEntryPoint(GWT.getModuleBaseURL() + "oxpathvalidator_gwt/greet");
+		target.setServiceEntryPoint(GWT.getModuleBaseURL() + "oxpathvalidator/greet");
 
 		// Since RPC calls are asynchronous, we will need to wait for a response
 		// after this test method returns. This line tells the test runner to wait
@@ -49,7 +49,7 @@ public class OXPathValidator_GWTTest extends GWTTestCase {
 				// Now that we have received a response, we need to tell the test runner
 				// that the test is complete. You must call finishTest() after an
 				// asynchronous test finishes successfully, or the test will time out.
-				OXPathValidator_GWTTest.this.finishTest();
+				OXPathValidatorTest.this.finishTest();
 			}
 		});
 	}

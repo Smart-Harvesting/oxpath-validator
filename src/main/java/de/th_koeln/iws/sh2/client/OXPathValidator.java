@@ -19,7 +19,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
-public class OXPathValidator_GWT implements EntryPoint {
+public class OXPathValidator implements EntryPoint {
 	/**
 	 * The message displayed to the user when the server cannot be reached or
 	 * returns an error.
@@ -121,7 +121,7 @@ public class OXPathValidator_GWT implements EntryPoint {
 				sendButton.setEnabled(false);
 				textToServerLabel.setText(textToServer);
 				serverResponseLabel.setText("");
-				OXPathValidator_GWT.this.parseService.parseInput(textToServer, new AsyncCallback<ParseResult>() {
+				OXPathValidator.this.parseService.parseInput(textToServer, new AsyncCallback<ParseResult>() {
 					@Override
 					public void onFailure(Throwable caught) {
 						// Show the RPC error message to the user

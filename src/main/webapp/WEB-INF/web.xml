@@ -6,9 +6,9 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>parseServlet</servlet-name>
-    <url-pattern>/oxpathvalidator_gwt/parse</url-pattern>
+    <url-pattern>/oxpathvalidator/parse</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
-    <welcome-file>OXPathValidator_GWT.html</welcome-file>
+    <welcome-file>OXPathValidator.html</welcome-file>
   </welcome-file-list>
 </web-app>
