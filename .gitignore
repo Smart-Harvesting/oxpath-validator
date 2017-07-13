@@ -48,7 +48,7 @@ local.properties
 ##GWT##
 
 # gwt caches and compiled units #
-war/gwt_bree/
+war/oxpathvalidator_gwt/
 gwt-unitCache/
 
 # boilerplate generated classes #
