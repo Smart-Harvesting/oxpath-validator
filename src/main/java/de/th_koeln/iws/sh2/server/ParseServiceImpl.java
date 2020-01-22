@@ -7,6 +7,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import de.th_koeln.iws.sh2.client.ParseResult;
 import de.th_koeln.iws.sh2.client.ParseService;
 import uk.ac.ox.cs.diadem.oxpath.parse.OXPathParser;
+import uk.ac.ox.cs.diadem.oxpath.parse.ParseException;
 
 /**
  * The server-side implementation of the RPC service.
@@ -22,7 +23,7 @@ public class ParseServiceImpl extends RemoteServiceServlet implements ParseServi
 			OXPathParser p = new OXPathParser(new ByteArrayInputStream(input.getBytes()));
 			p.Expression();
 			result.setMessage("Parsed Input OK");
-		} catch (Exception e) {
+		} catch (ParseException e) {
 			result.setMessage("ERROR IN PARSE");
 			result.setError(e.getMessage());
 		}
